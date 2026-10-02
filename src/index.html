@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo</title>
+    <link rel="stylesheet" href="./recursos/css/index.css"> <!--  <link> para conectar CSS general a esta página -->
+    
+</head>
+<body>
+
+    <header class="cabecera-principal"> <!-- usamos <header> con clase para agrupar la identidad y nav de la página-->
+        <!--enlace en el logo para volver a la página de inicio -->
+        <a href="index.html" class="enlace-logo">
+            <!-- el 'alt' describe la imagen para accesibilidad y si falla la carga -->
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Logo Retiro Sustentable">
+        </a>
+
+        <nav class="menu-navegacion"> <!-- navegación simple con enlaces directos-->
+            <a href="index.html">Inicio</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <!--sección de presentación con h1 único de la página-->
+        <section class="bienvenida">
+            <h1>Catálogo de Cabañas</h1>
+            <p>Bienvenido a nuestro catálogo. Explora nuestras opciones y encuentra la que mejor se adapte a tus necesidades.</p>
+        </section>
+
+        <!--sección del catálogo con un h2 para la lista de cabañas-->
+        <section class="catalogo">
+            <h2>Cabañas disponibles para alquiler</h2>
+                
+            <!--.catalogo-cabanas como contenedor principal de las tarjetas -->
+            <div class="catalogo-cabanas">
+                <article class="tarjeta-cabana"> <!--cada cabaña va a tener un article porque son independientes-->
+                    <img src="./recursos/imagenes/modelo1.webp" alt="Cabaña del cerro simple">
+                    <h3>Cabaña del Cerro</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <p class="precio"><strong>Precio:</strong> $30.000 / día</p>
+                    <a href="reservas.html" class="boton-reserva">Reservar</a> <!--enlace que va directo a la página de reservas-->
+                </article> 
+        
+                <article class="tarjeta-cabana"> <!--cabaña 2-->
+                    <img src="./recursos/imagenes/modelo2.webp" alt="Cabaña del río frente al agua">
+                    <h3>Cabaña del Río</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <p class="precio"><strong>Precio:</strong> $40.000 / día</p>
+                    <a href="reservas.html" class="boton-reserva">Reservar</a>
+                </article>
+
+                <article class="tarjeta-cabana"> <!--cabaña 3-->
+                    <img src="./recursos/imagenes/modelo3.webp" alt="Cabaña del bosque con entorno arbolado">
+                    <h3>Cabaña del Bosque</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <p class="precio"><strong>Precio:</strong> $60.000 / día</p>
+                    <a href="reservas.html" class="boton-reserva">Reservar</a> 
+                </article>
+
+                <article class="tarjeta-cabana"> <!--cabaña 4-->
+                    <img src="./recursos/imagenes/modelo4.webp" alt="Cabaña del valle con vista panorámica">
+                    <h3>Cabaña del Valle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <p class="precio"><strong>Precio:</strong> $80.000 / día</p>
+                    <a href="reservas.html" class="boton-reserva">Reservar</a> 
+                </article>
+            </div>
+        </section>
+    </main>
+        
+    <!--reemplazamos <div> por <footer> porqueefine el pie de página con la información institucional-->
+    <footer class="pie-principal">
+      <p class="texto-pie">&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

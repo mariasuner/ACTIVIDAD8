@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el footer quede al final de la pantalla */
-}
+}  
 
 /* Encabezados generales */
 h1 {
